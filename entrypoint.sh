@@ -8,4 +8,8 @@ then
   echo "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
 fi
 
-sh -c "rclone $*"
+while :
+do
+	rclone $*
+	sleep 5m 1s
+done
